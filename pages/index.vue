@@ -3,16 +3,12 @@
     <header class="content">
       <VuesaxLogo />
     </header>
-    <H1 class="textContent">
-      Vuesax
-    </H1>
+    <H1 class="textContent">Vuesax</H1>
     <H2 class="textContent">
-      TypeScript
+      <i class="material-icons">code</i> TypeScript
     </H2>
     <div class="content">
-      <defaultBtn>
-        Sample
-      </defaultBtn>
+      <defaultBtn>Sample</defaultBtn>
     </div>
   </div>
 </template>
@@ -25,8 +21,8 @@ import { Vue, Component } from "nuxt-property-decorator";
     VuesaxLogo: () => import("~/components/VuesaxLogo.vue"),
     H1: () => import("~/components/atoms/H1.vue"),
     H2: () => import("~/components/atoms/H2.vue"),
-    defaultBtn: () => import("~/components/atoms/defaultBtn.vue")
-  }
+    defaultBtn: () => import("~/components/atoms/defaultBtn.vue"),
+  },
 })
 export default class Index extends Vue {}
 </script>
